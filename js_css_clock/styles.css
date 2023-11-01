@@ -1,21 +1,124 @@
-.clock {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: auto;
+    max-width: 1200px;
+    height: 100vh;
+    padding: 15rem;
+    font-family: sans-serif;
+    background-image:
+        linear-gradient(rgb(255, 195, 195),
+            rgb(195, 255, 195),
+            rgb(195, 195, 255),
+            rgb(240, 240, 240));
+    background-repeat: no-repeat;
+    box-shadow: 0 9px 0px 0px white,
+        0 -9px 0px 0px white,
+        12px 0 15px -4px rgba(31, 73, 125, 0.8),
+        -12px 0 15px -4px rgba(31, 73, 125, 0.8);
+
+}
+
+.clock,
+.border {
+    position: relative;
+    margin: auto;
+    max-width: 400px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.border {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 .clock-face {
-    margin: auto;
-    height: 300px;
+    width: 80%;
     aspect-ratio: 1;
-    border: 4px solid black;
-    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
 }
 
 .hand {
-    width: 125px;
-    border: 2px solid black;
-    margin: auto;
+    background-color: black;
     position: absolute;
-    top: 50%;
     transform-origin: 100%;
-    transform: rotate(0deg);
+    transform: rotate(90deg);
+}
+
+.second {
+    height: 1%;
+    width: 50%;
+    top: 49.5%;
+}
+
+.minute {
+    height: 2%;
+    width: 45%;
+    left: 5%;
+    top: 49%;
+}
+
+.hour {
+    height: 3%;
+    width: 40%;
+    left: 10%;
+    top: 48.5%;
+}
+
+.center-dot {
+    background-color: black;
+    position: absolute;
+    height: 5%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    left: 47.4%;
+    top: 47.5%;
+}
+
+.number {
+    position: absolute;
+    padding: 8px;
+    height: 10%;
+    width: 120%;
+    top: 45%;
+    left: -10%;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.x {
+    transform: rotate(90deg);
+}
+
+.x * {
+    transform: rotate(-90deg);
+}
+
+.a {
+    transform: rotate(120deg);
+}
+
+.b {
+    transform: rotate(150deg);
+}
+
+.c {
+    transform: rotate(210deg);
+}
+
+.d {
+    transform: rotate(240deg);
 }
