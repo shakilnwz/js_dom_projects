@@ -52,7 +52,7 @@
     background-color: black;
     position: absolute;
     transform-origin: 100%;
-    transform: rotate(90deg);
+    transition: 0.5s cubic-bezier(1, -0.52, 0, 1.44);
 }
 
 .second {
