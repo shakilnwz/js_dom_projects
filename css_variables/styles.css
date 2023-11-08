@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(255, 173, 173), rgb(184, 233, 184), rgb(123, 123, 245));
+    background-image: linear-gradient(#Ffffea, #dbdbca, #ffffea);
 }
 
 .main {
@@ -21,10 +21,10 @@ body {
     height: 100vh;
     margin: auto;
     text-align: center;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 
 }
 
